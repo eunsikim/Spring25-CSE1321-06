@@ -6,7 +6,7 @@ def main():
 
     # We are not changing message
     print(len(message))
-    print(message.replace("Hello", "Good Bye"))
+    print(message.replace("Hello", "Goodbye"))
     print(message.upper())
     print(message.lower())
     print(message.isnumeric())
