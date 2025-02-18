@@ -15,11 +15,11 @@ def main():
     unit = ""
     user_measurement = user_measurement.replace(" ", "")
 
-    for c in user_measurement:
-        if c.isdigit() or c == ".":
-            number += c
+    for char in user_measurement:
+        if char.isdigit() or char == ".":
+            number += char
         else:
-            unit += c
+            unit += char
 
     number = float(number)
 
