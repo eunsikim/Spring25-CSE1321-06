@@ -25,7 +25,7 @@ def calculateFinalGrade(case, known_labs, known_assignments):
 def main():
     Lab1 = 80
     Lab2 = 90
-    Lab3 = 69
+    Lab3 = 50
     Lab4 = 59
     Lab5 = 84
     Assignment1 = 90
@@ -40,6 +40,11 @@ def main():
     print(f"Maximum possible final grade: {best}")
 
     print(f"Minimum possible final grade: {worst}")
+
+    if True:
+        x = 80
+
+    print(x)
 
 if __name__ == "__main__":
     main()
