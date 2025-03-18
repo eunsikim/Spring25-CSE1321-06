@@ -17,5 +17,7 @@ def main():
     # Creates a dictionary using the dictionary constructor
     ages = dict(Alice = 30, Bob = 40, Charlie = 50)
 
+    print(numbers)
+
 if __name__ == "__main__":
     main()
