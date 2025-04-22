@@ -24,13 +24,20 @@ class Elevator:
 
             if self.current_floor > self.destination_floor:
                 for x in range(self.current_floor - self.destination_floor):
+                    self.current_floor -= 1
                     print(f"Floor #{self.current_floor}")
-                    self.current_floor -= 1 
+            elif self.current_floor < self.destination_floor:
+                for x in range(self.destination_floor - self.current_floor):
+                    self.current_floor += 1
+                    print(f"Floor #{self.current_floor}")
         else:
             print("Destination is not valid")
 
 def main():
-    pass
+    elevator_obj = Elevator(1, 0)
+
+    elevator_obj.move(5)
+    elevator_obj.move(3)
 
 
 if __name__ == "__main__":
